@@ -1,12 +1,9 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 #include <iostream>
+#include <fstream>
 #include <vector>
-#include <stack>
-#include <list>
 #include <map>
-#include <utility>
-#include <algorithm>
 
 using namespace std;
 
@@ -14,14 +11,16 @@ class graph
 {
 	public:
 		graph();
-		void addNode(int vertex);
-		void addEdge(int vertex, int edge);
+		void setDirected();
+		void setUndirected();	
+		void addEdge(char vertex, char edge, int weight);
+		bool checkEdge(char vertex);
 		void dump();
+		void dijkstra(char source);
+		void srpa(char source, int k);
 	private:
-		map<int, vector<int> > adjList;
-		stack<int> S, P;
-		map<int, int> preorder;
-		int counter;
+		map<char, vector<pair<char, int> > > adjList;
+		bool directed;
 };
 
 #endif
