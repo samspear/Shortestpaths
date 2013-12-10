@@ -77,10 +77,8 @@ int main(int argc, char* argv[])
 	cout << "Source : ";
 	source = cin.get();
 	myGraph.dijkstra(source);
-
-
 	cin.clear();
-	cin.ignore(256, '\n');
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 	// Shortest Reliable Paths Algorithm
 
@@ -88,7 +86,7 @@ int main(int argc, char* argv[])
 	cout << "Source : ";
 	source = cin.get();
 	cin.clear();
-	cin.ignore();
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cout << "Integer k : ";
 	k = cin.get();
 	myGraph.srpa(source, k);

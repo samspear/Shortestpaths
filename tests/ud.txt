@@ -1,0 +1,10 @@
+#Undirected Graph
+UD
+A B 3
+A C 4
+B F 1
+B G 4
+C D 2
+C E 6
+E F 5
+F G 3

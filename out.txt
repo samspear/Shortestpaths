@@ -1,8 +1,22 @@
 Dijkstra
 Source : A
+Node A : 0
+Node B : 1
+Node C : 1
+Node D : 2
+Node E : 3
+Node F : 4
+Node G : 5
 End Dijstra
 
 Shortest Reliable Paths Algorithm
 Source : A
 Integer k : 53
+Node A : 0
+Node B : 1
+Node C : 1
+Node D : 2
+Node E : 3
+Node F : 4
+Node G : 5
 End Shortest Reliable Paths Algorithm
